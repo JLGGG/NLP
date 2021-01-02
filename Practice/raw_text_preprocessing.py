@@ -44,14 +44,14 @@ for wd in corrected_word_list:
         corrected_word_list_without_stopwords.append(wd)
 print(corrected_word_list_without_stopwords[:20])
 
-# Stem extraction
+# Stemming
 stemmer = nltk.stem.PorterStemmer()
 corrected_word_list_without_stopwords_stemmed = []
 for wd in corrected_word_list_without_stopwords:
     corrected_word_list_without_stopwords_stemmed.append(stemmer.stem(wd))
 print(corrected_word_list_without_stopwords_stemmed[:20])
 
-
+# lemmatization
 lemmatizer = WordNetLemmatizer()
 corrected_word_list_without_stopwords_lemmatized = []
 for wd in corrected_word_list_without_stopwords:
